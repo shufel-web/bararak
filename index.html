@@ -1669,10 +1669,10 @@
                     <div class="form-group">
                         <label>Quantity</label>
                         <select required>
-                            <option value="1">1 Bottle - $29.99</option>
-                            <option value="2">2 Bottles - $54.99</option>
-                            <option value="3">3 Bottles - $79.99</option>
-                            <option value="6">6 Bottles - $149.99</option>
+                            <option value="1">1 Bottle - ₱??.99</option>
+                            <option value="2">2 Bottles - ₱??.99</option>
+                            <option value="3">3 Bottles - ₱??.99</option>
+                            <option value="6">6 Bottles - ₱??.99</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-full">Complete Payment</button>
@@ -1766,7 +1766,7 @@
                 
                 parallaxElements.forEach((el, index) => {
                     const speed = 0.5 + (index * 0.1);
-                    el.style.transform = `translateY(${scrolled * speed * 0.1}px)`;
+                    el.style.transform = `translateY(₱{scrolled * speed * 0.1}px)`;
                 });
             });
         }
