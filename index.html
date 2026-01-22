@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banarak - Artisan Banana Wine</title>
+    <title>Banarak -  Banana Wine</title>
     <style>
         * {
             margin: 0;
@@ -1359,7 +1359,7 @@
 
     <header>
         <h1>Banarak</h1>
-        <p>Artisan Banana Wine • Handcrafted with Passion</p>
+        <p> Banana Wine • Handcrafted with Passion</p>
     </header>
 
     <div class="container">
@@ -1644,38 +1644,7 @@
                 <span class="close" onclick="closePaymentModal()">&times;</span>
                 <h2>Complete Your Order</h2>
                 <form id="paymentForm" onsubmit="processPayment(event)">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Card Number</label>
-                        <input type="text" required placeholder="1234 5678 9012 3456" maxlength="19">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Expiry Date</label>
-                            <input type="text" required placeholder="MM/YY" maxlength="5">
-                        </div>
-                        <div class="form-group">
-                            <label>CVV</label>
-                            <input type="text" required placeholder="123" maxlength="3">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Quantity</label>
-                        <select required>
-                            <option value="1">1 Bottle - ₱??.99</option>
-                            <option value="2">2 Bottles - ₱??.99</option>
-                            <option value="3">3 Bottles - ₱??.99</option>
-                            <option value="6">6 Bottles - ₱??.99</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-full">Complete Payment</button>
+                    <button type="submit" class="btn btn-full">Click me to contact mario.</button>
                 </form>
                 <div id="errorMessage" class="error-message"></div>
             </div>
@@ -1736,20 +1705,7 @@
             event.preventDefault();
             
             const submitBtn = event.target.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Processing...';
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-            
-            setTimeout(() => {
-                const errorMsg = document.getElementById('errorMessage');
-                errorMsg.textContent = 'Error: Just pick it up physically baby grill😘';
-                errorMsg.style.display = 'block';
-                
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
-            }, 1500);
+            window.open("https://www.facebook.com/marioamihanjr", "_blank");
         }
 
         window.onclick = function(event) {
