@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-sjsj
+
         body {
             font-family: 'Georgia', serif;
             line-height: 1.6;
@@ -20,7 +20,7 @@ sjsj
             scrollbar-width: none;
             -ms-overflow-style: none;
         }
-dndjdn
+
         body::-webkit-scrollbar {
             display: none;
         }
@@ -1679,7 +1679,7 @@ dndjdn
             tabContents.forEach(content => content.classList.remove('active'));
             tabButtons.forEach(btn => btn.classList.remove('active'));
             
-            if (tabName === 'main') {
+            if (tabName === 'mains') {
                 document.getElementById('mainTab').classList.add('active');
                 tabButtons[0].classList.add('active');
             } else if (tabName === 'procedure') {
@@ -1689,7 +1689,9 @@ dndjdn
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
+        
+        switchTab('procedure')
+        
         function showPaymentModal() {
             document.getElementById('paymentModal').style.display = 'block';
             document.body.style.overflow = 'hidden';
