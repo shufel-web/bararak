@@ -1679,7 +1679,7 @@
             tabContents.forEach(content => content.classList.remove('active'));
             tabButtons.forEach(btn => btn.classList.remove('active'));
             
-            if (tabName === 'mains') {
+            if (tabName === 'main') {
                 document.getElementById('mainTab').classList.add('active');
                 tabButtons[0].classList.add('active');
             } else if (tabName === 'procedure') {
@@ -1689,8 +1689,6 @@
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        
-        switchTab('procedure')
         
         function showPaymentModal() {
             document.getElementById('paymentModal').style.display = 'block';
